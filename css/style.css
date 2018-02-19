@@ -1,0 +1,1068 @@
+@font-face {
+	font-family: Myriad;
+	src: url('../fonts/MyriadPro-Regular.otf');
+}
+
+@font-face {
+	font-family: MyriadSem;
+	src: url('../fonts/MyriadPro-Semibold.otf');
+}
+
+@font-face {
+	font-family: MyriadBold;
+	src: url('../fonts/MyriadPro-Bold.otf');
+}
+
+@font-face {
+	font-family: Pattaya;
+	src: url('../fonts/Pattaya-Regular.ttf');
+}
+
+body {
+	font-family: Myriad, sans-serif;
+}
+
+#content-wrap {
+	position: relative;
+	overflow: hidden;
+}
+
+div.row {
+	margin: 0 !important;
+}
+
+a {
+	outline: none !important;
+}
+
+span.fonts {
+	font-family: Myriad, 'Arial Narrow', sans-serif;
+}
+
+
+/* МЕНЮ */
+
+.menu {
+	padding: 10px 0;
+}
+
+.desktop > div {
+	text-align: center;
+	padding: 0;
+}
+
+.menu-item {
+	display: inline-block;
+	color: #006b3b;
+	font-family: Myriad, 'Arial Narrow', sans-serif;
+	font-size: 15px;
+	padding: 5px 15px;
+	margin-top: 20px;
+	position: relative;
+}
+
+.menu-item:hover {
+	font-weight: bold;
+	padding: 0 15px;
+}
+
+.menu-item:before {
+	content: '';
+	display: block;
+	position: absolute;
+	top: -2px;
+	left: 47%;
+	width: 0;
+	height: 0;
+	background: url('../img/list.png') no-repeat;
+	background-size: 100%;
+	-webkit-transition: .4s;
+	transition: .4s;
+}
+
+.menu-item:hover:before {
+	left: 38%;
+	top: -20px;
+	width: 26px;
+	height: 21px;
+}
+
+.sub-menu {
+	position: absolute;
+	width: 200px;
+	top: 70px;
+	right: -320px;
+	-webkit-transition: .5s;
+	transition: .5s;
+	background-color: rgba(255,255,255,.9);
+	z-index: 1;
+}
+
+.sub-menu ul {
+	margin: 0;
+	padding: 0;
+}
+
+.sub-menu li {
+	list-style: none;
+	border-bottom: 1px solid #006b3b;
+	padding: 5px 0 5px 15px;
+}
+
+.sub-menu li a {
+	color: #006b3b;
+	font-size: 18px;
+	text-decoration: none;
+}
+
+.sub-menu li:active,
+.sub-menu li:focus {
+	background-color: #006b3b;
+}
+
+.sub-menu li:active a,
+.sub-menu li:focus a {
+	color: white;
+}
+
+.sub-menu-visible {
+	right: 0;
+}
+
+.mobile .date {
+	color: #006b3b;
+	font-family: MyriadSem, sans-serif;
+	font-size: 25px;
+}
+
+.mobile .burger {
+	float: right;
+	cursor: pointer;
+}
+
+.mobile .burger > div {
+	width: 30px;
+	border: 2px solid #006b3b;
+	margin: 4px 0;
+	-webkit-transition: .5s;
+	transition: .5s;
+}
+
+.mobile .burger.cross > div:first-child {
+	-webkit-transform: translateY(10px) rotate(45deg);
+	-ms-transform: translateY(10px) rotate(45deg);
+	-o-transform: translateY(10px) rotate(45deg);
+	-moz-transform: translateY(10px) rotate(45deg);
+	transform: translateY(10px) rotate(45deg);
+}
+
+.mobile .burger.cross > div:last-child {
+	-webkit-transform: translateY(-6px) rotate(135deg);
+	-ms-transform: translateY(-6px) rotate(135deg);
+	-o-transform: translateY(-6px) rotate(135deg);
+	-moz-transform: translateY(-6px) rotate(135deg);
+	transform: translateY(-6px) rotate(135deg);
+}
+
+.mobile .burger.cross > div:nth-child(2) {
+	opacity: 0
+}
+
+@media screen and (max-width: 1199px) {
+	.menu {
+		width: 100%;
+	}
+	.menu-item {
+		padding: 0 10px;
+	}
+}
+
+
+/* ШАПКА */
+
+.hat {
+	background: url('../img/shapka-fon.jpg') no-repeat;
+	background-size: 100%;
+	color: #006b3b;
+	padding-top: 165px;
+	box-sizing: border-box;
+	height: 785px;
+}
+
+.hat .hat-desktop {
+	position: relative;
+}
+
+.logo-foto {
+	position: absolute;
+	bottom: -70px;
+	left: 160px;
+}
+
+.hat-text, .hat-date {
+	padding: 0;
+}
+
+.hat-date {
+	font-size: 40px;
+	line-height: 40px;
+	font-weight: bold;
+	padding: 10px 0 0 40px;
+}
+
+.hat-date span {
+	font-size: 60px;
+}
+
+.hat-text {
+	text-align: right;
+}
+
+.hat-text p.slogan {
+	font-family: Pattaya;
+	font-size: 30px;
+	margin: 0;
+}
+
+.hat-text p.title {
+	font-size: 115px;
+	font-weight: bold;
+	line-height: 80px;
+	margin: 0;
+}
+
+.hat-text p.title span.pet {
+	font-size: 80px;
+}
+
+.hat-text p.title span.ned {
+	letter-spacing: 9px;
+	margin-right: -9px;
+}
+
+.but-ton {
+	display: inline-block;
+	width: 190px;
+	height: 60px;
+	position: relative;
+	overflow: hidden;
+	color: white;
+	padding: 10px;
+	margin-top: 40px;
+	text-align: center;
+	font-size: 17px;
+	box-shadow: -1px -1px 3px black;
+	outline: none;
+}
+
+.but-ton-wrap .date {
+	display: none;
+}
+
+.but-ton:before {
+	content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: -100%;
+	-webkit-transition: .5s;
+    transition: .5s;
+}
+
+.but-ton:hover:before {
+	left: 0;
+}
+
+.ticket {
+	background-color: #006b3b;
+	margin-left: 10px;
+}
+.ticket:before {
+	background-color: #f1b707;
+}
+
+.stand {
+	background-color: #f1b707;
+}
+
+.stand:before {
+	background-color: #006b3b;
+}
+
+.but-ton span {
+	position: absolute;
+	display: inline-block;
+	width: 100%;
+	left: 0;
+}
+
+.stand span {
+	top: 19px;
+}
+
+.ticket span {
+	top: 5px;
+}
+
+.soc {
+	padding: 0 0 0 20px;
+}
+
+.soc .vk {
+	margin-right: 10px;
+}
+
+.mob-slogan {
+	font-family: Pattaya;
+	font-size: 30px;
+	text-align: center;
+	padding: 30px 0;
+}
+
+.mob-soc {
+	text-align: center;
+	word-spacing: 15px;
+}
+
+@media screen and (max-width: 1700px) {
+	.hat {
+		background-size: cover;
+		background-position: 50% 50%;
+	}
+}
+
+@media screen and (max-width: 1199px) {
+	.hat {
+		height: 700px;
+		padding-top: 140px;
+	}
+	.hat-date {
+		font-size: 36px;
+		line-height: 38px;
+		padding: 0 0 0 15px;
+	}
+	.hat-date span {
+		font-size: 50px;
+	}
+	.hat-text p.slogan {
+		font-size: 26px;
+	}
+	.hat-text p.title {
+		font-size: 100px;
+	}
+	.hat-text p.title span.pet {
+		font-size: 70px;
+	}
+	.but-ton-wrap {
+		width: 200px;
+		float: right;
+	}
+	.ticket {
+		margin-left: 0;
+		margin-top: 10px;
+	}
+	.logo-foto {
+		left: 95px;
+		top: 100px;
+		width: 300px;
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.hat {
+		height: auto;
+		padding: 120px 0 50px;
+	}
+	.but-ton-wrap {
+		float: none;
+		margin: 10px auto;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.hat {
+		padding: 50px 0;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.hat {
+		padding: 35px 0;
+	}
+	.mob-slogan {
+		padding: 30px 0 10px;
+	}
+	.mob-skk {
+		width: 80px;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.mobile .date {
+		display: none;
+	}
+	.mobile .logo {
+		width: 90%;
+	}
+	.picture {
+		display: none;
+	}
+	.mob-but {
+		width: 100%;
+	}
+	.but-ton-wrap {
+		width: 100%;
+		text-align: center;
+	}
+	.but-ton-wrap .date {
+		display: block;
+		font-size: 30px;
+		font-weight: bold;
+		margin-top: 15px;
+	}
+}
+
+
+/* ТЕМАТИКА */
+
+.theme {
+	color: #006b3b;
+}
+
+.theme h1 {
+	font-family: Pattaya;
+	margin-bottom: 50px;
+}
+
+.theme-item {
+	margin: 25px 0;
+	font-size: 18px;
+	position: relative;
+}
+
+.theme-item:hover {
+	font-weight: bold;
+}
+
+.theme-item:before {
+	content: '';
+	display: block;
+	position: absolute;
+	top: -2px;
+	left: 10px;
+	width: 0;
+	height: 0;
+	background: url('../img/list.png') no-repeat;
+	background-size: 100%;
+	-webkit-transition: .4s;
+	transition: .4s;
+}
+
+.theme-item:hover:before {
+	left: 0;
+	top: -20px;
+	width: 26px;
+	height: 21px;
+}
+
+.pics {
+	padding: 0;
+}
+
+.column {
+	float: left;
+	width: 33.333%;
+	padding: 0.2vw;
+}
+
+.column img {
+	margin: 0 auto 0.5vw;
+	-webkit-transition: .4s;
+	transition: .4s;
+	opacity: 0;
+}
+
+@media screen and (max-width: 991px) {
+	.theme {
+		width: 100%;
+	}
+	.theme h1 {
+		margin-bottom: 30px;
+	}
+}
+
+
+/* НОВОСТИ */
+
+.news {
+	background-color: #EEEEEE;
+	padding: 10px 0;
+	color: #006b3b;
+}
+
+.news h2 {
+	text-align: center;
+	font-family: Pattaya;
+}
+
+
+/* ПРИНЯТЬ УЧАСТИЕ */
+
+.takepart {
+	background-image: url('../img/takepart-fon.jpg');
+	background-size: cover;
+	background-position: 50% 50%;
+	color: white;
+	font-family: Pattaya;
+	padding: 200px 0 360px;
+}
+
+.takepart h2 {
+	text-align: center;
+}
+
+.takepart p {
+	font-size: 20px;
+}
+
+.booking {
+	text-align: center;
+	font-size: 16px;
+	padding-top: 50px;
+}
+
+.book-stand {
+	display: inline-block;
+	margin-top: 15px;
+	position: relative;
+	overflow: hidden;
+	width: 190px;
+	height: 45px;
+	color: white;
+	font-family: Myriad, sans-serif;
+	text-align: center;
+	font-size: 17px;
+	background-color: #006b3b;
+	box-shadow: -1px -1px 3px black;
+	outline: none;
+}
+
+.book-stand span {
+	position: absolute;
+	display: inline-block;
+	width: 100%;
+	left: 0;
+	top: 10px;
+}
+
+.book-stand:before {
+	background-color: #f1b707;
+	content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: -100%;
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+
+.book-stand:hover:before {
+	left: 0;
+}
+
+@media screen and (max-width: 767px) {
+	.takepart p {
+		font-size: 16px;
+	}
+}
+
+
+/* БЕСПЛАТНЫЙ БИЛЕТ */
+
+.ticket-wrap {
+	background-color: #EBEBEB;
+	font-family: Pattaya;
+	color: #006b3b;
+	padding: 50px 0;
+}
+
+.ticket-wrap h2 {
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.ticket-wrap p {
+	font-size: 17px;
+	margin-bottom: 20px;
+}
+
+.bottom-block {
+	float: right;
+	text-align: center;
+}
+
+.ticket-text, .free-ticket {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.ticket-text {
+	padding: 10px;
+	font-size: 18px;
+}
+
+.free-ticket {
+	position: relative;
+	overflow: hidden;
+	width: 190px;
+	height: 45px;
+	color: white;
+	font-family: Myriad, sans-serif;
+	text-align: center;
+	font-size: 17px;
+	background-color: #006b3b;
+	box-shadow: -1px -1px 2px black;
+	outline: none;
+}
+
+.free-ticket span {
+	position: absolute;
+	display: inline-block;
+	width: 100%;
+	left: 0;
+	top: 10px;
+}
+
+.free-ticket:before {
+	background-color: #f1b707;
+	content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: -100%;
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+
+.free-ticket:hover:before {
+	left: 0;
+}
+
+#ticket {
+	color: #006b3b;
+}
+
+#ticket .modal-content {
+	border-radius: 0;
+	margin-top: 70px;
+	position: relative;
+	background: none;
+}
+
+#white-fon {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: white;
+}
+
+#fon {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: .3;
+	background-image: url('../img/modal-fon.jpg');
+	background-size: cover;
+	background-position: 50% 50%;
+}
+
+#ticket .modal-header {
+	font-family: Pattaya;
+	font-size: 26px;
+	text-align: center;
+}
+
+#ticket [data-dismiss="modal"] {
+	font-family: Myriad, sans-serif;
+	font-weight: bold;
+	float: right;
+	color: black;
+	cursor: pointer;
+}
+
+#ticket .modal-body {
+	padding: 0 15%;
+}
+
+#ticket [type="text"] {
+	width: 100%;
+	height: 45px;
+	font-size: 20px;
+}
+
+#ticket label {
+	font-weight: normal;
+}
+
+#ticket label a {
+	color: black;
+	font-weight: bold;
+}
+
+#ticket [type="submit"] {
+	display: block;
+	margin: 0 auto;
+	padding: 5px 10px;
+	font-size: 16px;
+}
+
+.vkontakte, .content {
+	overflow: hidden;
+}
+
+@media screen and (max-width: 991px) {
+	.ticket-wrap .container {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.vkontakte {
+		padding-top: 20px;
+	}
+	#ticket .modal-body {
+		padding: 0 10%;
+	}
+}
+
+
+/* ОТЗЫВЫ */
+
+.comments {
+	padding: 30px 0 80px;
+}
+
+.comments h2 {
+    text-align: center;
+    color: #006b3b;
+    font-family: Pattaya;
+	margin-bottom: 30px;
+}
+
+.comments .slick-prev:before,
+.comments .slick-next:before {
+	color: #107c4a;
+	font-size: 35px;
+}
+
+.comments .slick-prev {
+	left: 35%;
+	top: 110%;
+}
+
+.comments .slick-next {
+	right: 35%;
+	top: 110%;
+}
+
+.com-item {
+	border: 1px solid silver;
+	width: 260px;
+	height: 440px;
+	padding-bottom: 15px;
+	margin: 0 auto;
+	-webkit-transition: .5s;
+	transition: .5s;
+	box-shadow: 2px 2px 3px silver;
+}
+
+.com-item:hover {
+	border: 5px solid #006b3b;
+	color: #006b3b;
+}
+
+.com-item .top-pic {
+	height: 150px;
+	margin-bottom: 50px;
+	position: relative;
+	background-size: cover;
+	background-position: 50% 50%;
+}
+
+.com-item.one .top-pic {
+	background-image: url('../img/comments/pic1.jpg');
+}
+
+.com-item.two .top-pic {
+	background-image: url('../img/comments/pic2.jpg');
+}
+
+.com-item.three .top-pic {
+	background-image: url('../img/comments/pic3.jpg');
+}
+
+.com-item.four .top-pic {
+	background-image: url('../img/comments/pic4.jpg');
+}
+
+.com-item.five .top-pic {
+	background-image: url('../img/comments/pic5.jpg');
+}
+
+.com-item.six .top-pic {
+	background-image: url('../img/comments/pic6.jpg');
+}
+
+.com-item.seven .top-pic {
+	background-image: url('../img/comments/pic7.jpg');
+}
+
+.com-item.eight .top-pic {
+	background-image: url('../img/comments/pic8.jpg');
+}
+
+.com-item.nine .top-pic {
+	background-image: url('../img/comments/pic9.jpg');
+}
+
+.com-item.ten .top-pic {
+	background-image: url('../img/comments/pic10.jpg');
+}
+
+.com-item .top-pic:after {
+	content: '';
+	display: block;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: -35px;
+	margin: auto;
+	width: 70px;
+	height: 70px;
+	border: 2px solid silver;
+	background-size: cover;
+	background-position: 50% 50%;
+	border-radius: 50%;
+	-webkit-transition: .4s;
+	transition: .4s;
+}
+
+.com-item.one .top-pic:after {
+	background-image: url('../img/comments/1.jpg');
+}
+
+.com-item.two .top-pic:after {
+	background-image: url('../img/comments/2.jpg');
+}
+
+.com-item.three .top-pic:after {
+	background-image: url('../img/comments/3.jpg');
+}
+
+.com-item.four .top-pic:after {
+	background-image: url('../img/comments/4.jpg');
+}
+
+.com-item.five .top-pic:after {
+	background-image: url('../img/comments/5.jpg');
+}
+
+.com-item.six .top-pic:after {
+	background-image: url('../img/comments/6.jpg');
+}
+
+.com-item.seven .top-pic:after {
+	background-image: url('../img/comments/7.jpg');
+}
+
+.com-item.eight .top-pic:after {
+	background-image: url('../img/comments/8.jpg');
+}
+
+.com-item.nine .top-pic:after {
+	background-image: url('../img/comments/9.jpg');
+}
+
+.com-item.ten .top-pic:after {
+	background-image: url('../img/comments/10.jpg');
+}
+
+.com-item:hover .top-pic:after {
+	border: 2px solid #006b3b;
+}
+
+.com-item p {
+	padding: 0 25px;
+}
+	
+.com-item p.name {
+	font-size: 18px;
+}
+
+
+/* ПАРТНЕРЫ */
+
+.partners {
+	padding: 15px 0 70px;
+	background-color: #107c4a;
+}
+
+.partners h2 {
+    text-align: center;
+    color: white;
+    font-family: Pattaya;
+	margin-bottom: 30px;
+}
+
+.part-items img {
+	display: block;
+	margin: 0 auto;
+}
+
+.partners .slick-next,
+.partners .slick-prev {
+	top: 45%;
+	z-index: 1;
+}
+
+.partners .slick-prev:before,
+.partners .slick-next:before {
+	font-weight: bold;
+	font-size: 30px;
+}
+
+.partners .slick-prev:before {
+    content: '<';
+}
+
+.partners .slick-next:before {
+    content: '>';
+}
+
+@media screen and (max-width: 767px) {
+	.partners .slick-prev {
+		right: 10px;
+	}
+	.partners .slick-next {
+		left: 10px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.partners .slick-prev {
+		right: -10px;
+	}
+	.partners .slick-next {
+		left: -10px;
+	}
+}
+
+
+/* КОНТАКТЫ */
+
+.contacts {
+	background-image: url('../img/contacts-fon.jpg');
+	background-size: cover;
+	background-position: 50% 50%;
+	color: white;
+	padding: 150px 0 200px;
+}
+
+.contacts h2 {
+    text-align: center;
+    color: white;
+    font-family: Pattaya;
+	margin-bottom: 30px;
+}
+
+.contacts .row:last-child {
+	padding-top: 30px;
+	position: relative;
+}
+
+.contacts .row:last-child .up {
+	position: absolute;
+	right: 30px;
+	bottom: 35%;
+	cursor: pointer;
+	box-shadow: 2px 2px 3px black;
+	border-radius: 2px;
+}
+
+.contacts .col-sm-4 {
+	text-align: center;
+	padding: 100px 0;
+}
+
+.contacts p {
+	max-width: 385px;
+	margin: 25px auto;
+}
+
+.contacts p a {
+	color: white;
+}
+
+#mapkit-8962 {
+    height:300px;
+    width:auto;
+    box-shadow: -2px -2px 3px black;
+}
+	
+@media screen and (max-width: 767px) {
+	.contacts {
+		padding: 70px 0;
+	}
+	.contacts .col-sm-4 {
+		padding: 0 0 50px 0;
+	}
+	.contacts p {
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.contacts .row:last-child .up {
+		position: static;
+		display: block;
+		margin: 0 auto;
+	}
+}
+
+/* ФУТЕР */
+
+.footer {
+	padding: 30px 0;
+	background-color: #107c4a;
+	color: white;
+}
+
+.footer [class^="col-"] {
+	padding: 10px;
+}
+
+.footer .soc {
+	text-align: center;
+}
+
+.footer .soc img {
+	margin: 7px;
+}
+
+@media screen and (max-width: 767px) {
+	.footer [class^="col-"] {
+		text-align: center;
+	}
+	
+	.footer .org img {
+		margin: 0 auto;
+	}
+}
+	

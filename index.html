@@ -1,0 +1,433 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Всё для лета</title>
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/bootstrap_col_15.css" rel="stylesheet">
+		<link rel='stylesheet' id='slick-css' href='slick/slick.css' type='text/css' media='all' />
+		<link rel='stylesheet' id='slick-theme-css' href='slick/slick-theme.css' type='text/css' media='all' />
+		<link href="css/style.css" rel="stylesheet">
+		<script src="https://vk.com/js/api/openapi.js?143" type="text/javascript"></script>
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+    </head>
+    <body>
+	<div id="content-wrap">
+
+		<!-- МЕНЮ -->
+		<div class="sub-menu"><!-- вылетает на мобильнике -->
+			<ul>
+				<li><a href="#about">О выставке</a></li>
+				<li><a href="#news">Новости</a></li>
+				<li><a href="#takepart">Примите участие</a></li>
+				<li><a href="#visit">Посетите выставку</a></li>
+				<li><a href="#program">Программа выставки</a></li>
+				<li><a href="#contacts">Контакты</a></li>
+			</ul>
+		</div>
+
+		<div class="container menu">
+			<div class="row desktop hidden-sm hidden-xs">
+				<div class="col15-sm-6">
+					<a href="#about"><div class="menu-item">О ВЫСТАВКЕ</div></a>
+					<a href="#news"><div class="menu-item">НОВОСТИ</div></a>
+					<a href="#takepart"><div class="menu-item">ПРИМИТЕ УЧАСТИЕ</div></a>
+				</div>
+				<div class="col15-sm-3">
+					<a href="/"><img src="img/logo-top.png" alt="" class="img-responsive" /></a>
+				</div>
+				<div class="col15-sm-6">
+					<a href="#visit"><div class="menu-item">ПОСЕТИТЕ ВЫСТАВКУ</div></a>
+					<a href=""><div class="menu-item">ПРОГРАММА</div></a>
+					<a href="#contacts"><div class="menu-item">КОНТАКТЫ</div></a>
+				</div>
+			</div>
+			<div class="row mobile visible-sm visible-xs">
+				<div class="col-xs-5 logo">
+					<img src="img/logo-top.png" alt="" class="img-responsive" />
+				</div>
+				<div class="col-xs-6 date">19-22 апреля 2018</div>
+				<div class="col-xs-1">
+					<div class="burger">
+						<div></div>
+						<div></div>
+						<div></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- ШАПКА -->
+		<div class="container-fluid hat">
+			<div class="container">
+
+				<div class="row hat-desktop hidden-sm hidden-xs">
+					<img src="img/logo-foto.png" alt="" class="logo-foto" />
+					<div class="col-sm-9 col-sm-offset-1">
+						<div class="col-md-3 col-sm-3 hat-date">
+							<span>19-22</span><br/>апреля<br />2018
+						</div>
+						<div class="col-md-9 col-sm-9 hat-text">
+							<p class="slogan">Сделайте свой сад красивым и урожайным!</p>
+							<p class="title"><span class="pet">Петербургская</span><br />зеленая<br /><span class="ned">неделя</span></p>
+							<div class="but-ton-wrap">
+								<a href=""><div class="but-ton stand"><span class="fonts"><b>ПРИНЯТЬ УЧАСТИЕ</b></span></div></a>
+								<a href="#ticket" data-toggle="modal"><div class="but-ton ticket"><span class="fonts"><b>ПОЛУЧИТЬ <br />БЕСПЛАТНЫЙ БИЛЕТ</b></span></div></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-2 soc">
+						<a href=""><img class="vk" src="img/vk.png" alt="" /></a>
+						<a href=""><img src="img/fb.png" alt="" /></a><br /><br />
+						<a href=""><img src="img/skk.png" alt="" class="img-responsive" /></a>
+					</div>
+				</div>
+
+				<div class="row hat-mobile visible-sm visible-xs">
+					<div class="col-xs-12 mob-slogan">Сделайте свой сад красивым и урожайным!</div>
+					<div class="col-xs-6 picture"><img src="img/logo-foto.png" alt="" class="img-responsive" /></div>
+					<div class="col-xs-6 mob-but">
+						<div class="mob-soc">
+							<a href=""><img class="vk" src="img/vk.png" alt="" /></a>
+							<a href=""><img src="img/fb.png" alt="" /></a>
+							<a href=""><img src="img/skk.png" alt="" class="mob-skk" /></a>
+						</div>
+						<div class="but-ton-wrap">
+							<span class="date">19-22 апреля 2018</span>
+							<a href=""><div class="but-ton stand"><span class="fonts"><b>ПРИНЯТЬ УЧАСТИЕ</b></span></div></a>
+							<a href=""><div class="but-ton ticket"><span class="fonts"><b>ПОЛУЧИТЬ <br />БЕСПЛАТНЫЙ БИЛЕТ</b></span></div></a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<!-- ТЕМАТИКА -->
+		<div class="container theme" id="about">
+			<h1>Тематические разделы выставки</h1>
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="theme-item" data-title="sazhency">Саженцы плодовых и декоративных растений</div>
+					<div class="theme-item" data-title="semena">Семена, рассада</div>
+					<div class="theme-item" data-title="inventar">Садовый инвентарь, малая сельхозтехника</div>
+					<div class="theme-item" data-title="udobrenia">Удобрения, средства защиты растений</div>
+					<div class="theme-item" data-title="teplicy">Теплицы, укрывной материал</div>
+					<div class="theme-item" data-title="mebel">Мебель и декор для дачи</div>
+					<div class="theme-item" data-title="hoztovary">Хозяйственные товары</div>
+					<div class="theme-item" data-title="pressa">Специализированные печатные издания</div>
+					<div class="theme-item" data-title="wc">Сухие торфяные туалеты</div>
+					<div class="theme-item" data-title="kompost">Садовые компостеры</div>
+				</div>
+				<div class="col-sm-8 pics">
+					<div class="column">
+						<img src="img/01.jpg" alt="" class="img-responsive" name="sazhency" />
+						<img src="img/04.jpg" alt="" class="img-responsive" name="teplicy" />
+						<img src="img/07.jpg" alt="" class="img-responsive" name="pressa" />
+					</div>
+					<div class="column">
+						<img src="img/02.jpg" alt="" class="img-responsive" name="semena" />
+						<img src="img/05.jpg" alt="" class="img-responsive" name="udobrenia" />
+						<img src="img/08.jpg" alt="" class="img-responsive" name="wc" />
+						<img src="img/10.jpg" alt="" class="img-responsive" name="hoztovary" />
+					</div>
+					<div class="column">
+						<img src="img/03.jpg" alt="" class="img-responsive" name="inventar" />
+						<img src="img/06.jpg" alt="" class="img-responsive" name="mebel" />
+						<img src="img/09.jpg" alt="" class="img-responsive" name="kompost" />
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- прослойка -->
+		<div class="container-fluid" style="background-image: url('img/theme-bottom.jpg'); height: 80px"></div>
+		
+		<!-- НОВОСТИ -->
+		<div class="container-fluid news" id="news">
+			<div class="container">
+				<h2>Новости выставки</h2>
+				<br /><br /><br /><br /><br /><br /><br /><br />
+			</div>
+		</div>
+		
+		<!-- ПРИНЯТЬ УЧАСТИЕ -->
+		<div class="container-fluid takepart" id="takepart">
+			<div class="container">
+				<h2>Принять участие в выставке</h2><br /><br />
+				<div class="col-md-10 col-md-offset-1 col-sm-12">
+					<p>С каждым годом выставка "Петербургская Зеленая неделя" становится все популярнее - с нами уже более 200 участников! Ежегодно выставку посещают более 60 тысяч покупателей. <br />
+					Станьте и Вы частью грандиозного проекта - познакомьте посетителей со своей продукцией, найдите новых покупателей, проводите акции и конкурсы! Мы ответим на все Ваши вопросы об участии - просто напишите нам, используя кнопки связи!</p>
+				</div>
+				<div class="col-sm-5 col-sm-offset-1 booking">
+					Предварительная заявка  на стенд<br />
+					<a href="#stand" data-toggle="modal"><div class="book-stand"><span class="fonts">ЗАБРОНИРУЙТЕ СТЕНД</span></div></a>
+				</div>
+				<div class="col-sm-5 booking">
+					Задать вопрос / заказать звонок<br />
+					<a href="#stand" data-toggle="modal"><div class="book-stand"><span class="fonts">ОСТАВИТЬ ЗАЯВКУ</span></div></a>
+				</div>
+			</div>
+		</div>
+		
+		<!-- БИЛЕТ -->
+		<div class="container-fluid ticket-wrap" id="visit">
+			<div class="container">
+				<h2>Посетить выставку</h2>
+				<div class="row">
+					<div class="col-sm-push-3 col-sm-9 col-md-push-3 col-md-8 content">
+						<p>Хотите прийти на выставку БЕСПЛАТНО? Скачайте наш бесплатный входной билет прямо сейчас!</p>
+						<img src="img/ticket.jpg" alt="" class="img-responsive" />
+						<div class="bottom-block">
+							<div class="ticket-text">Получить бесплатный билет</div>
+							<a href="#ticket" data-toggle="modal"><div class="free-ticket"><span class="fonts">ПОЛУЧИТЕ БИЛЕТ</span></div></a>
+						</div>
+					</div>
+					<div class="col-sm-pull-9 col-sm-3 col-md-pull-8 col-md-3 vkontakte">
+						<div class="vk" id="vk">
+							<div id="vk_groups"></div>
+							<script type="text/javascript">
+								var vk = document.getElementById('vk');
+								window.onresize = function(){
+									vk.innerHTML = '<div id="vk_groups"></div>';
+									VK.Widgets.Group("vk_groups", {width: vk.offsetWidth, height: "400"}, 49012601);
+								};
+								window.onresize();	
+							</script>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>	
+		
+		<div id="ticket" class="modal fade" data-backdrop="true">
+			<div class="modal-dialog">
+			<div id="white-fon"></div>
+			<div id="fon"></div>
+				<div class="modal-content">
+					<div class="modal-header">
+						Бесплатный билет на выставку
+						<div data-dismiss="modal"><b>X</b></div>
+					</div>
+					<div class="modal-body">
+						<!--// Для корректной работы формы, не удаляйте из элементов служебный класс "sendsayFieldItem" //-->
+						<script type="text/javascript">
+						var PS_ErrPref = 'Поля не заполнены или заполнены неверно: \n'; 
+						</script>
+						<script type="text/javascript" src="https://sendsay.ru/account/js/formCheck.js?20170516"></script>
+						<div class="subpro_forma">
+						<form id="sendsay_form" name="form_724" action="https://sendsay.ru/form/farexpo/40/" method="post" onsubmit="javascript:if(typeof sendsay_check_form === 'function'){ return sendsay_check_form(this); }" accept-charset="utf-8">
+
+						   <div id="q769" class="subpro_clear sendsayFieldItem" style="padding-top:5px; padding-bottom:10px;">
+						   <div class="subpro_left" id="sp_label_q769" data-title="Имя" style="font-size: 22px">Имя <span style="color:#F00">*</span></div>
+						   <div class="subpro_right">
+																	   
+						<input type="text" class="subpro_input pro_mustbe" data-type="free" name="q769" value="" size="">
+
+						 <div id="_error" style="display:none;"></div>
+
+						   </div>
+						   </div>
+
+						   <div id="_member_email" class="subpro_clear sendsayFieldItem" style="padding-top:5px; padding-bottom:10px;">
+						   <div class="subpro_left" id="sp_label__member_email" data-title="Email" style="font-size: 22px">Email <span style="color:#F00">*</span></div>
+						   <div class="subpro_right">
+																	   
+						<input type="text" class="subpro_input pro_mustbe" data-type="email" name="_member_email" value="" size="">
+
+						   <div id="_error" style="display:none;"></div>
+
+						   </div>
+						   </div>
+
+						   <div id="q698" class="subpro_clear sendsayFieldItem" style="padding-top:5px; padding-bottom:25px;">
+							   <div class="subpro_left" id="sp_label_q794" data-title="Согласие на обработку данных">Согласие на обработку данных <span style="color:#F00">*</span></div>
+							   <div class="subpro_right">                                            
+
+							<input id="q794_0" type="checkbox" value="1" name="q794" data-group="q794" data-type="nm" class="pro_mustbe" style="position: absolute" />
+							<label for="q794_0" style="padding-left: 20px"> Даю <a href="/upload/Soglasie.pdf" target="_blank">согласие на обработку моих персональных данных</a> в соответствии с 152-ФЗ &quot;О персональных данных&quot; и хочу получать новости выставки на указанный e-mail</label><br />                            
+							   <div id="_error" style="display:none;"></div>
+							   </div>
+						   </div>
+
+						   <div class="subpro_clear" id="sendsayFormSubmitBox" style="padding-top:5px; padding-bottom:25px;">
+							   <div class="subpro_right">
+							   <input class="subpro_btn" type="submit" name="bt_save" value="Получить билет"/>
+
+							   </div>
+						   </div>
+						</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!-- end modal -->
+		
+		<!-- ОТЗЫВЫ -->
+		<div class="container comments">
+			<h2>Отзывы посетителей</h2>
+			<div class="com-items">
+				<div>
+					<div class="com-item one">
+						<div class="top-pic"></div>
+						<p class="name"><b>Сергей и Анна</b></p>
+						<p>На выставку приезжаем купить деревца, кустарники. Ожидания оправдались – приобрели яблони, жимолость, цветы. Понравились парники из поликарбоната, присматривали грядки оцинкованные.</p>
+					</div>
+				</div>
+				<div>
+					<div class="com-item two">
+						<div class="top-pic"></div>
+						<p class="name"><b>Виктория</b></p>
+						<p>Впервые на выставке – пришла посмотреть комнатные растения и растения для посадки в саду. Очень удобно, что можно не только выбрать продукцию, но пообщаться со знающими продавцами, узнать рекомендации по посадке и выращиванию. </p>
+					</div>
+				</div>
+				<div>
+					<div class="com-item three">
+						<div class="top-pic"></div>
+						<p class="name"><b>Кирилл Владимирович</b></p>
+						<p>Выставка хорошая. Много питомников растений представлено, есть из чего выбрать. Приятно, что несмотря на большое количество покупателей около стендов, продавцы успевают консультировать, и развернуто отвечать на вопросы каждого.</p>
+					</div>
+				</div>
+				<div>
+					<div class="com-item four">
+						<div class="top-pic"></div>
+						<p class="name"><b>Наталья</b></p>
+						<p>Посещаю выставку каждый год. Есть уже полюбившиеся питомники, которым я доверяю. Очень удобно, что они приезжают в город из отдаленных районов.</p>
+					</div>
+				</div>
+				<div>
+					<div class="com-item five">
+						<div class="top-pic"></div>
+						<p class="name"><b>Геннадий</b></p>
+						<p>Сроки проведения хорошие, очень удобно закупать саженцы перед выходными. Кроме растений нашел много полезной продукции для дачи. Порадовал большой выбор инструментов для сада.</p>
+					</div>
+				</div>
+				<div>
+					<div class="com-item six">
+						<div class="top-pic"></div>
+						<p class="name"><b>Алена</b></p>
+						<p>Хоть и не имею дачи или сада, купила прекрасные комнатные цветы. Среди такого разнообразия зеленых саженцев, цветов, семян просто приятно находиться!</p>
+					</div>
+				</div>
+				<div>
+					<div class="com-item seven">
+						<div class="top-pic"></div>
+						<p class="name"><b>Алексей</b></p>
+						<p>Интересная выставка – много посетителей, большой ассортимент, дружелюбные продавцы. Можно узнать об интересных сортах фруктов, овощей, ягод, которые устойчивы к нашему неласковому климату.</p>
+					</div>
+				</div>
+				<div>
+					<div class="com-item eight">
+						<div class="top-pic"></div>
+						<p class="name"><b>Екатерина Львовна</b></p>
+						<p>Выставка очень хорошо организована. Светло, много места, есть зоны отдыха. Продавцы очень приятные, дают подробные консультации. Хочется видеть на выставке ещё больше питомников.</p>
+					</div>
+				</div>
+				<div>
+					<div class="com-item nine">
+						<div class="top-pic"></div>
+						<p class="name"><b>Юлия</b></p>
+						<p>Каждый год посещаю. В этом году выставка значительно увеличилась. Больше участников с растениями, есть инструменты для сада. Можно купить всё, что необходимо для сада и получить консультации специалистов.</p>
+					</div>
+				</div>
+				<div>
+					<div class="com-item ten">
+						<div class="top-pic"></div>
+						<p class="name"><b>Ангелина Викторовна</b></p>
+						<p>На «Зеленую неделю» прихожу за укрывным материалом, удобрениями, семенами и саженцами. Выставка нравится и хотелось бы еще больше ассортимента оборудования.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- прослойка -->
+		<div class="container-fluid" style="background-image: url('img/poloska-partners.jpg'); height: 50px"></div>
+		
+		<!-- ПАРТНЕРЫ -->
+		<div class="container-fluid partners">
+			<div class="container">		
+				<h2>Партнеры выставки</h2>
+				<div class="row">
+					<div class="part-items" dir="rtl">
+						<div><img src="img/partners/fenix.jpg" alt="" /></div>
+						<div><img src="img/partners/ogorod.png" alt="" /></div>
+						<div><img src="img/partners/chast_sad.png" alt="" /></div>
+						<div><img src="img/partners/mr7.gif" alt="" /></div>
+						<div><img src="img/partners/kurier.gif" alt="" /></div>
+						<div><img src="img/partners/stroy.gif" alt="" /></div>
+						<div><img src="img/partners/otdyh.jpg" alt="" /></div>
+						<div><img src="img/partners/kulturstolitsa.jpg" alt="" /></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- КОНТАКТЫ -->
+		<div class="container-fluid contacts" id="contacts">
+			<div class="container">		
+				<h2>Контакты</h2>
+				<div class="row">
+					<div class="col-sm-4">
+						<a href="#stand" data-toggle="modal"><div class="book-stand"><span class="fonts">ОСТАВИТЬ ЗАЯВКУ</span></div></a>
+					</div>
+					<div class="col-sm-8">
+						<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCmGFXRuGgIc7h8yFYsIVn3nnnvpKsHsok&extension=.js"></script> 
+						<script src="https://cdn.mapkit.io/v1/infobox.js"></script> 
+						<link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet"> 
+						<link href="https://cdn.mapkit.io/v1/infobox.css" rel="stylesheet" > 
+						<script src="js/map.js"></script>
+						<div id='mapkit-8962'></div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-6">
+						<p><img src="img/phone.png" alt="" /> &nbsp;&nbsp;<b>ТЕЛЕФОН / ФАКС</b> +7 (812) 777-04-07</p>
+						<p><img src="img/mobile.png" alt="" /> &nbsp;&nbsp;<b>МОБИЛЬНЫЙ</b> +7 (921) 884-90-01 &nbsp;&nbsp;
+						  <img src="img/viber.png" alt="" /> &nbsp;<img src="img/skype.png" alt="" /> &nbsp;<img src="img/whatsapp.png" alt="" /></p>
+						<p><img src="img/mail.png" alt="" /> &nbsp;&nbsp;<b>E-MAIL</b> <a href="mailto:nb@farexpo.ru">nb@farexpo.ru</a></p>
+					</div>
+					<div class="col-sm-6">
+						<p><img src="img/map.png" alt="" /> &nbsp;&nbsp;<b>АДРЕС</b><br />Санкт-Петербург, пр. Юрия Гагарина, д. 8<br />
+						<img src="img/metro.png" alt="" /> &nbsp; Парк Победы</p>
+						<p><img src="img/time.png" alt="" /> &nbsp;&nbsp;<b>ВРЕМЯ РАБОТЫ</b><br />
+						19-21 апреля с 11<sup>00</sup> до 20<sup>00</sup> &nbsp;&nbsp; 22 апреля с 11<sup>00</sup> до 18<sup>00</sup></p>
+						<img src="img/up.jpg" alt="" class="up" />
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- ФУТЕР -->
+		<div class="container-fluid footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-2 col-sm-3 org">
+						ОРГАНИЗАТОР ВЫСТАВКИ<br /><a href="http://farexpo.ru" target="_blank"><img src="img/logo_FE.png" alt="" class="img-responsive" /></a>
+					</div>
+					<div class="col-md-2 col-sm-3">
+						Санкт-Петербург<br />пр. Юрия Гагарина, д. 8<br /><img src="img/metro-foot.png" alt="" /> Парк Победы
+					</div>
+					<div class="col-md-2 col-sm-3 soc">
+						Следите за нами!<br />
+						<img src="img/android.png" alt="" /><img src="img/g-plus.png" alt="" /><img src="img/vk-foot.png" alt="" /><img src="img/fb-foot.png" alt="" />
+					</div>
+					<div class="col-sm-3"></div>
+				</div>
+			</div>
+		</div>	
+		
+		<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+		<script src="slick/slick.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/scripts.js"></script>
+
+	</div><!-- end content wrap -->
+    </body>
+</html>
