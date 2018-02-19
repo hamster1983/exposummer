@@ -24,7 +24,7 @@ body {
 
 #content-wrap {
 	position: relative;
-	overflow: hidden;
+	/*overflow: hidden;*/
 }
 
 div.row {
@@ -43,11 +43,15 @@ span.fonts {
 /* ШАПКА + МЕНЮ */
 
 .container-fluid.top {
-	padding: 0;
+	padding-bottom: 35px;
 	background: linear-gradient(to bottom, #007234 80%, #27A42F 100%);
 	color: white;
 	font-weight: bold;
+}
+
+.top .container {
 	position: relative;
+	padding: 0;
 }
 
 .shapka {
@@ -56,12 +60,14 @@ span.fonts {
 }
 
 .shapka [class^="col"] {
-	padding: 0;
 	letter-spacing: 1px;
 	text-align: center;
 }
+.contacts {
+	padding: 0;
+}
 
-.shapka [class^="col"]:last-child {
+.social {
 	text-align: right;
 }
 
@@ -74,8 +80,15 @@ span.fonts {
 	justify-content: space-around;
 	background-color: #FFCC01;
 	position: absolute;
-	bottom: -20px;
-	z-index: 1;
+	bottom: -45px;
+	left: 0;
+	right: 0;
+	margin: 0;
+	box-shadow: 0 2px 5px 1px gray;
+}
+
+.contacts div {
+	padding: 10px;
 }
 
 .menu a {
@@ -99,51 +112,6 @@ span.fonts {
 .menu li:hover .glyphicon-menu-down {
 	opacity: 1;
 }
-
-/*.menu {
-	padding: 10px 0;
-}
-
-.desktop > div {
-	text-align: center;
-	padding: 0;
-}
-
-/*.menu-item {
-	display: inline-block;
-	color: #006b3b;
-	font-family: Myriad, 'Arial Narrow', sans-serif;
-	font-size: 15px;
-	padding: 5px 15px;
-	margin-top: 20px;
-	position: relative;
-}
-
-.menu-item:hover {
-	font-weight: bold;
-	padding: 0 15px;
-}
-
-.menu-item:before {
-	content: '';
-	display: block;
-	position: absolute;
-	top: -2px;
-	left: 47%;
-	width: 0;
-	height: 0;
-	background: url('../img/list.png') no-repeat;
-	background-size: 100%;
-	-webkit-transition: .4s;
-	transition: .4s;
-}
-
-.menu-item:hover:before {
-	left: 38%;
-	top: -20px;
-	width: 26px;
-	height: 21px;
-}*/
 
 .sub-menu {
 	position: absolute;
@@ -187,26 +155,20 @@ span.fonts {
 	right: 0;
 }
 
-.mobile .date {
-	color: #006b3b;
-	font-family: MyriadSem, sans-serif;
-	font-size: 25px;
-}
-
-.mobile .burger {
+.burger {
 	float: right;
 	cursor: pointer;
 }
 
-.mobile .burger > div {
+.burger > div {
 	width: 30px;
-	border: 2px solid #006b3b;
+	border: 2px solid white;
 	margin: 4px 0;
 	-webkit-transition: .5s;
 	transition: .5s;
 }
 
-.mobile .burger.cross > div:first-child {
+.burger.cross > div:first-child {
 	-webkit-transform: translateY(10px) rotate(45deg);
 	-ms-transform: translateY(10px) rotate(45deg);
 	-o-transform: translateY(10px) rotate(45deg);
@@ -214,7 +176,7 @@ span.fonts {
 	transform: translateY(10px) rotate(45deg);
 }
 
-.mobile .burger.cross > div:last-child {
+.burger.cross > div:last-child {
 	-webkit-transform: translateY(-6px) rotate(135deg);
 	-ms-transform: translateY(-6px) rotate(135deg);
 	-o-transform: translateY(-6px) rotate(135deg);
@@ -222,7 +184,7 @@ span.fonts {
 	transform: translateY(-6px) rotate(135deg);
 }
 
-.mobile .burger.cross > div:nth-child(2) {
+.burger.cross > div:nth-child(2) {
 	opacity: 0
 }
 
@@ -235,10 +197,31 @@ span.fonts {
 	}
 }
 
+@media screen and (max-width: 991px) {
+	.container-fluid.top {
+		padding: 0;
+	}
+	.top .container {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.logo {
+		width: 85%;
+	}
+	.mobile {
+		width: 15%;
+	}
+	.contacts {
+		display: none;
+	}
+}
+
 
 /* ШАПКА */
 
-.hat {
+/*.hat {
 	background: url('../img/shapka-fon.jpg') no-repeat;
 	background-size: 100%;
 	color: #006b3b;
@@ -480,11 +463,11 @@ span.fonts {
 		margin-top: 15px;
 	}
 }
-
+*/
 
 /* ТЕМАТИКА */
 
-.theme {
+/*.theme {
 	color: #006b3b;
 }
 
@@ -549,10 +532,10 @@ span.fonts {
 		margin-bottom: 30px;
 	}
 }
-
+*/
 
 /* НОВОСТИ */
-
+/*
 .news {
 	background-color: #EEEEEE;
 	padding: 10px 0;
@@ -563,10 +546,10 @@ span.fonts {
 	text-align: center;
 	font-family: Pattaya;
 }
-
+*/
 
 /* ПРИНЯТЬ УЧАСТИЕ */
-
+/*
 .takepart {
 	background-image: url('../img/takepart-fon.jpg');
 	background-size: cover;
@@ -635,10 +618,10 @@ span.fonts {
 		font-size: 16px;
 	}
 }
-
+*/
 
 /* БЕСПЛАТНЫЙ БИЛЕТ */
-
+/*
 .ticket-wrap {
 	background-color: #EBEBEB;
 	font-family: Pattaya;
@@ -799,10 +782,10 @@ span.fonts {
 		padding: 0 10%;
 	}
 }
-
+*/
 
 /* ОТЗЫВЫ */
-
+/*
 .comments {
 	padding: 30px 0 80px;
 }
@@ -963,10 +946,10 @@ span.fonts {
 .com-item p.name {
 	font-size: 18px;
 }
-
+*/
 
 /* ПАРТНЕРЫ */
-
+/*
 .partners {
 	padding: 15px 0 70px;
 	background-color: #107c4a;
@@ -1021,10 +1004,10 @@ span.fonts {
 		left: -10px;
 	}
 }
-
+*/
 
 /* КОНТАКТЫ */
-
+/*
 .contacts {
 	background-image: url('../img/contacts-fon.jpg');
 	background-size: cover;
@@ -1093,9 +1076,10 @@ span.fonts {
 		margin: 0 auto;
 	}
 }
+*/
 
 /* ФУТЕР */
-
+/*
 .footer {
 	padding: 30px 0;
 	background-color: #107c4a;
