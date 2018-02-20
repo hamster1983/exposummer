@@ -1,30 +1,13 @@
-@font-face {
-	font-family: Myriad;
-	src: url('../fonts/MyriadPro-Regular.otf');
-}
+@font-face{font-family:Myriad;src:url('../fonts/MyriadPro-Regular.otf');}
+@font-face{font-family:MyriadSem;src:url('../fonts/MyriadPro-Semibold.otf');}
+@font-face{font-family:MyriadBold;src:url('../fonts/MyriadPro-Bold.otf');}
+@font-face{font-family:Pattaya;src:url('../fonts/Pattaya-Regular.ttf');}
 
-@font-face {
-	font-family: MyriadSem;
-	src: url('../fonts/MyriadPro-Semibold.otf');
-}
-
-@font-face {
-	font-family: MyriadBold;
-	src: url('../fonts/MyriadPro-Bold.otf');
-}
-
-@font-face {
-	font-family: Pattaya;
-	src: url('../fonts/Pattaya-Regular.ttf');
-}
-
-body {
-	font-family: Myriad, sans-serif;
-}
+body{font-family:Myriad,'Arial Narrow',sans-serif;}
 
 #content-wrap {
 	position: relative;
-	/*overflow: hidden;*/
+	overflow: hidden;
 }
 
 div.row {
@@ -43,8 +26,8 @@ span.fonts {
 /* ШАПКА + МЕНЮ */
 
 .container-fluid.top {
-	padding-bottom: 35px;
-	background: linear-gradient(to bottom, #007234 80%, #27A42F 100%);
+	padding: 25px 0 35px;
+	background: linear-gradient(to bottom, #007233 75%, #27A42F 100%);
 	color: white;
 	font-weight: bold;
 }
@@ -57,18 +40,31 @@ span.fonts {
 .shapka {
 	display: flex;
 	align-items: center;
+	padding: 5px 0;
 }
 
 .shapka [class^="col"] {
 	letter-spacing: 1px;
 	text-align: center;
 }
-.contacts {
+.shapka .logo,
+.shapka .contacts,
+.shapka .social,
+.shapka .mobile {
 	padding: 0;
 }
 
-.social {
+.shapka .logo .exhib-number {
+	margin: 0;
+	text-align: left;
+	color: #efb900;
+}
+
+.shapka .social {
 	text-align: right;
+}
+.shapka .social img {
+	margin: 2px;
 }
 
 .menu {
@@ -78,7 +74,7 @@ span.fonts {
 	font-size: 18px;
 	display: flex;
 	justify-content: space-around;
-	background-color: #FFCC01;
+	background-color: #efb900;
 	position: absolute;
 	bottom: -45px;
 	left: 0;
@@ -92,7 +88,7 @@ span.fonts {
 }
 
 .menu a {
-	color: #007234;
+	color: #007233;
 }
 
 .menu li {
@@ -106,7 +102,7 @@ span.fonts {
 }
 
 .menu li:hover .menu-item {
-	border-bottom: 2px solid #007234;
+	border-bottom: 2px solid #007233;
 }
 
 .menu li:hover .glyphicon-menu-down {
@@ -116,8 +112,8 @@ span.fonts {
 .sub-menu {
 	position: absolute;
 	width: 200px;
-	top: 70px;
-	right: -320px;
+	top: 100px;
+	right: -220px;
 	-webkit-transition: .5s;
 	transition: .5s;
 	background-color: rgba(255,255,255,.9);
@@ -131,19 +127,19 @@ span.fonts {
 
 .sub-menu li {
 	list-style: none;
-	border-bottom: 1px solid #006b3b;
+	border-bottom: 1px solid #007233;
 	padding: 5px 0 5px 15px;
 }
 
 .sub-menu li a {
-	color: #006b3b;
+	color: #007233;
 	font-size: 18px;
 	text-decoration: none;
 }
 
 .sub-menu li:active,
 .sub-menu li:focus {
-	background-color: #006b3b;
+	background-color: #007233;
 }
 
 .sub-menu li:active a,
@@ -195,18 +191,26 @@ span.fonts {
 	.menu-item {
 		padding: 0 10px;
 	}
+	.shapka .logo .exhib-number {
+		font-size: 12px;
+		text-align: center;
+	}
 }
 
 @media screen and (max-width: 991px) {
 	.container-fluid.top {
-		padding: 0;
+		padding: 10px;
 	}
 	.top .container {
 		width: 100%;
 	}
+	.shapka .logo .exhib-number {
+		font-size: 14px;
+		text-align: left;
+	}
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 520px) {
 	.logo {
 		width: 85%;
 	}
@@ -218,67 +222,48 @@ span.fonts {
 	}
 }
 
-
-/* ШАПКА */
-
-/*.hat {
-	background: url('../img/shapka-fon.jpg') no-repeat;
-	background-size: 100%;
-	color: #006b3b;
-	padding-top: 165px;
-	box-sizing: border-box;
-	height: 785px;
+@media screen and (max-width: 360px) {
+	.shapka .logo .exhib-number {
+		font-size: 12px;
+		text-align: center;
+	}
 }
 
-.hat .hat-desktop {
+
+/* ТОП БЛОК */
+
+.container-fluid.top-block {
+	background-image: url('../img/fon-hat.jpg');
+	background-size: cover;
+	background-position: 50% 50%;
+	padding: 70px 0;
+}
+
+.top-block .container {
 	position: relative;
 }
 
-.logo-foto {
+.flower {
 	position: absolute;
-	bottom: -70px;
-	left: 160px;
+	left: -30px;
 }
 
-.hat-text, .hat-date {
-	padding: 0;
-}
-
-.hat-date {
-	font-size: 40px;
-	line-height: 40px;
+.top-block .date,
+.top-block .month {
+	text-align: center;
+	color: #007233;
+	font-size: 100px;
+	font-family: MyriadBold, 'Arial Narrow', sans-serif;
 	font-weight: bold;
-	padding: 10px 0 0 40px;
 }
 
-.hat-date span {
-	font-size: 60px;
+.top-block .month {
+	font-size: 38px;
+	line-height: 0;
 }
 
-.hat-text {
-	text-align: right;
-}
-
-.hat-text p.slogan {
-	font-family: Pattaya;
-	font-size: 30px;
-	margin: 0;
-}
-
-.hat-text p.title {
-	font-size: 115px;
-	font-weight: bold;
-	line-height: 80px;
-	margin: 0;
-}
-
-.hat-text p.title span.pet {
-	font-size: 80px;
-}
-
-.hat-text p.title span.ned {
-	letter-spacing: 9px;
-	margin-right: -9px;
+.top-block .month span {
+	color: #efb900;
 }
 
 .but-ton {
@@ -289,15 +274,12 @@ span.fonts {
 	overflow: hidden;
 	color: white;
 	padding: 10px;
-	margin-top: 40px;
+	margin: 10px 5px;
 	text-align: center;
 	font-size: 17px;
 	box-shadow: -1px -1px 3px black;
 	outline: none;
-}
-
-.but-ton-wrap .date {
-	display: none;
+	background-color: #007233;
 }
 
 .but-ton:before {
@@ -309,26 +291,11 @@ span.fonts {
     left: -100%;
 	-webkit-transition: .5s;
     transition: .5s;
+	background-color: #efb900;
 }
 
 .but-ton:hover:before {
 	left: 0;
-}
-
-.ticket {
-	background-color: #006b3b;
-	margin-left: 10px;
-}
-.ticket:before {
-	background-color: #f1b707;
-}
-
-.stand {
-	background-color: #f1b707;
-}
-
-.stand:before {
-	background-color: #006b3b;
 }
 
 .but-ton span {
@@ -338,134 +305,160 @@ span.fonts {
 	left: 0;
 }
 
-.stand span {
-	top: 19px;
+.but-ton.stand span {
+	top: 17px;
 }
 
-.ticket span {
+.but-ton.ticket span {
 	top: 5px;
 }
 
-.soc {
-	padding: 0 0 0 20px;
+.button-wrap {
+	margin-top: 50px;
+	width: 190px;
 }
 
-.soc .vk {
-	margin-right: 10px;
-}
-
-.mob-slogan {
-	font-family: Pattaya;
-	font-size: 30px;
-	text-align: center;
-	padding: 30px 0;
+.skk {
+	margin: 30px auto 0;
 }
 
 .mob-soc {
 	text-align: center;
-	word-spacing: 15px;
 }
 
-@media screen and (max-width: 1700px) {
-	.hat {
-		background-size: cover;
-		background-position: 50% 50%;
-	}
+.mob-soc img {
+	margin: 0 5px;
 }
 
 @media screen and (max-width: 1199px) {
-	.hat {
-		height: 700px;
-		padding-top: 140px;
-	}
-	.hat-date {
-		font-size: 36px;
-		line-height: 38px;
-		padding: 0 0 0 15px;
-	}
-	.hat-date span {
-		font-size: 50px;
-	}
-	.hat-text p.slogan {
-		font-size: 26px;
-	}
-	.hat-text p.title {
-		font-size: 100px;
-	}
-	.hat-text p.title span.pet {
-		font-size: 70px;
-	}
-	.but-ton-wrap {
-		width: 200px;
-		float: right;
-	}
-	.ticket {
-		margin-left: 0;
-		margin-top: 10px;
-	}
-	.logo-foto {
-		left: 95px;
-		top: 100px;
-		width: 300px;
+	.flower {
+		top: 30px;
+		width: 450px;
 	}
 }
 
 @media screen and (max-width: 991px) {
-	.hat {
-		height: auto;
-		padding: 120px 0 50px;
-	}
-	.but-ton-wrap {
-		float: none;
-		margin: 10px auto;
+	.button-wrap {
+		margin: 35px auto 0;
 	}
 }
 
 @media screen and (max-width: 767px) {
-	.hat {
-		padding: 50px 0;
+	.container-fluid.top-block {
+		padding: 40px 0;
 	}
-}
-
-@media screen and (max-width: 600px) {
-	.hat {
-		padding: 35px 0;
-	}
-	.mob-slogan {
-		padding: 30px 0 10px;
-	}
-	.mob-skk {
-		width: 80px;
+	.skk {
+		margin-top: 50px;
 	}
 }
 
 @media screen and (max-width: 500px) {
-	.mobile .date {
-		display: none;
-	}
-	.mobile .logo {
-		width: 90%;
-	}
-	.picture {
-		display: none;
-	}
-	.mob-but {
-		width: 100%;
-	}
-	.but-ton-wrap {
-		width: 100%;
+	.button-wrap {
 		text-align: center;
 	}
-	.but-ton-wrap .date {
-		display: block;
-		font-size: 30px;
-		font-weight: bold;
-		margin-top: 15px;
-	}
 }
-*/
+
 
 /* ТЕМАТИКА */
+
+.container-fluid.theme {
+	background-image: url('../img/fon-derevo.jpg');
+	background-size: cover;
+	background-position: 50% 50%;
+	padding: 0;
+}
+
+.description {
+	font-size: 20px;
+	line-height: 22px;
+	text-align: justify;
+}
+
+.buttons-group {
+	padding: 30px 0;
+}
+
+.buttons-group .col-sm-3 {
+	text-align: center;
+	padding: 0;
+}
+
+.buttons-group .but-ton {
+	margin: 10px 0;
+	background-color: #efb900;
+}
+
+.buttons-group .but-ton:before {
+	background-color: #007233;
+}
+
+.buttons-group .but-ton span {
+	top: 18px;
+}
+
+.theme-blocks,
+.theme-blocks .col-sm-4 {
+	display: flex;
+	justify-content: center;
+}
+
+.theme-blocks {
+	flex-wrap: wrap;
+}
+
+.theme-item {
+	background-color: rgba(0,0,0,.2);
+	padding: 10px 10px 30px 10px;
+	text-align: center;
+	position: relative;
+	margin: 10px auto;
+}
+
+.theme-item .title {
+	font-weight: bold;
+	font-family: MyriadBold, 'Arial Narrow', sans-serif;
+	font-size: 16px;
+	min-height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.theme-item .pic {
+	box-shadow: 2px 2px 3px black;
+	margin: 5px auto;
+}
+
+.theme-item .text,
+.theme-item a {
+	font-size: 16px;
+	line-height: 16px;
+	font-weight: bold;
+}
+
+.theme-item a {
+	position: absolute;
+	bottom: 10px;
+	left: 0;
+	right: 0;
+}
+
+@media screen and (max-width: 991px) {
+	.buttons-group {
+		width: 100%;
+	}
+	.buttons-group .but-ton {
+		width: 175px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.buttons-group .but-ton {
+		width: 190px;
+	}
+}
+
+
 
 /*.theme {
 	color: #006b3b;
