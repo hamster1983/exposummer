@@ -365,8 +365,7 @@ span.fonts {
 	background-image: url('../img/fon-derevo.jpg');
 	background-size: cover;
 	background-position: 50% 50%;
-	padding: 0;
-	padding-bottom: 100px;
+	padding: 0 0 100px 0;
 }
 
 .description {
@@ -460,74 +459,6 @@ span.fonts {
 }
 
 
-
-/*.theme {
-	color: #006b3b;
-}
-
-.theme h1 {
-	font-family: Pattaya;
-	margin-bottom: 50px;
-}
-
-.theme-item {
-	margin: 25px 0;
-	font-size: 18px;
-	position: relative;
-}
-
-.theme-item:hover {
-	font-weight: bold;
-}
-
-.theme-item:before {
-	content: '';
-	display: block;
-	position: absolute;
-	top: -2px;
-	left: 10px;
-	width: 0;
-	height: 0;
-	background: url('../img/list.png') no-repeat;
-	background-size: 100%;
-	-webkit-transition: .4s;
-	transition: .4s;
-}
-
-.theme-item:hover:before {
-	left: 0;
-	top: -20px;
-	width: 26px;
-	height: 21px;
-}
-
-.pics {
-	padding: 0;
-}
-
-.column {
-	float: left;
-	width: 33.333%;
-	padding: 0.2vw;
-}
-
-.column img {
-	margin: 0 auto 0.5vw;
-	-webkit-transition: .4s;
-	transition: .4s;
-	opacity: 0;
-}
-
-@media screen and (max-width: 991px) {
-	.theme {
-		width: 100%;
-	}
-	.theme h1 {
-		margin-bottom: 30px;
-	}
-}
-*/
-
 /* НОВОСТИ */
 /*
 .news {
@@ -542,152 +473,71 @@ span.fonts {
 }
 */
 
-/* ПРИНЯТЬ УЧАСТИЕ */
-/*
-.takepart {
-	background-image: url('../img/takepart-fon.jpg');
+
+/* ПРИНЯТЬ УЧАСТИЕ + ПОСЕТИТЬ */
+
+.container-fluid.takepart-visit {
+	background-image: url('../img/fon-takepart.jpg');
 	background-size: cover;
 	background-position: 50% 50%;
-	color: white;
 	font-family: Pattaya;
-	padding: 200px 0 360px;
-}
-
-.takepart h2 {
-	text-align: center;
-}
-
-.takepart p {
-	font-size: 20px;
-}
-
-.booking {
-	text-align: center;
-	font-size: 16px;
-	padding-top: 50px;
-}
-
-.book-stand {
-	display: inline-block;
-	margin-top: 15px;
-	position: relative;
-	overflow: hidden;
-	width: 190px;
-	height: 45px;
-	color: white;
-	font-family: Myriad, sans-serif;
-	text-align: center;
-	font-size: 17px;
-	background-color: #006b3b;
-	box-shadow: -1px -1px 3px black;
-	outline: none;
-}
-
-.book-stand span {
-	position: absolute;
-	display: inline-block;
-	width: 100%;
-	left: 0;
-	top: 10px;
-}
-
-.book-stand:before {
-	background-color: #f1b707;
-	content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: -100%;
-    -webkit-transition: .5s;
-    transition: .5s;
-}
-
-.book-stand:hover:before {
-	left: 0;
-}
-
-@media screen and (max-width: 767px) {
-	.takepart p {
-		font-size: 16px;
-	}
-}
-*/
-
-/* БЕСПЛАТНЫЙ БИЛЕТ */
-/*
-.ticket-wrap {
-	background-color: #EBEBEB;
-	font-family: Pattaya;
-	color: #006b3b;
+	color: #007233;
 	padding: 50px 0;
 }
 
-.ticket-wrap h2 {
-	text-align: center;
-	margin-bottom: 30px;
-}
-
-.ticket-wrap p {
-	font-size: 17px;
-	margin-bottom: 20px;
-}
-
-.bottom-block {
-	float: right;
+.container-fluid.takepart-visit h2 {
 	text-align: center;
 }
 
-.ticket-text, .free-ticket {
-	display: inline-block;
-	vertical-align: top;
+.circles img {
+	display: block;
+	margin: 25px auto 10px;
+	width: 140px;
 }
 
-.ticket-text {
-	padding: 10px;
-	font-size: 18px;
+.circles p {
+	font-size: 22px;
+	line-height: 22px;
 }
 
-.free-ticket {
+.takepart-buttons .col-sm-4 {
+	text-align: center;
+}
+
+.takepart-buttons .but-ton span {
+	top: 5px;
+}
+
+#visit {
+	padding-top: 150px;
 	position: relative;
-	overflow: hidden;
-	width: 190px;
-	height: 45px;
-	color: white;
-	font-family: Myriad, sans-serif;
-	text-align: center;
-	font-size: 17px;
-	background-color: #006b3b;
-	box-shadow: -1px -1px 2px black;
-	outline: none;
 }
 
-.free-ticket span {
+#visit .ticket-blank {
 	position: absolute;
-	display: inline-block;
-	width: 100%;
-	left: 0;
-	top: 10px;
+	width: 650px;
+	top: 250px;
+	left: 320px;
 }
 
-.free-ticket:before {
-	background-color: #f1b707;
-	content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: -100%;
-    -webkit-transition: .5s;
-    transition: .5s;
+#visit .content p {
+	font-family: Myriad, 'Arial Narrow', sans-serif;
+	font-size: 17px;
 }
 
-.free-ticket:hover:before {
-	left: 0;
+#visit .but-ton {
+	float: right;
+	margin-top: 300px;
 }
+
+#visit .but-ton span {
+	top: 5px;
+}
+
+/* БЕСПЛАТНЫЙ БИЛЕТ */
 
 #ticket {
-	color: #006b3b;
+	color: #007233;
 }
 
 #ticket .modal-content {
@@ -733,6 +583,7 @@ span.fonts {
 }
 
 #ticket .modal-body {
+	font-family: Myriad, sans-serif;
 	padding: 0 15%;
 }
 
@@ -762,13 +613,31 @@ span.fonts {
 	overflow: hidden;
 }
 
+@media screen and (max-width: 1199px) {
+	#visit .ticket-blank {
+		width: 600px;
+		left: 250px;
+	}
+}
+
 @media screen and (max-width: 991px) {
-	.ticket-wrap .container {
+	#visit {
 		width: 100%;
+	}
+	#visit .ticket-blank {
+		width: 500px;
 	}
 }
 
 @media screen and (max-width: 767px) {
+	#visit {
+		padding-top: 50px;
+	}
+	#visit .ticket-blank {
+		left: 20px;
+		top: 200px;
+		width: 80%;
+	}
 	.vkontakte {
 		padding-top: 20px;
 	}
@@ -776,7 +645,21 @@ span.fonts {
 		padding: 0 10%;
 	}
 }
-*/
+
+@media screen and (max-width: 500px) {
+	#visit .but-ton {
+		margin-top: 250px;
+	}
+}
+
+@media screen and (max-width: 360px) {
+	#visit .but-ton {
+		float: none;
+		display: block;
+		margin: 200px auto 0;
+	}
+}
+
 
 /* ОТЗЫВЫ */
 /*
