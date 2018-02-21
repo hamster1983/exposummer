@@ -366,6 +366,7 @@ span.fonts {
 	background-size: cover;
 	background-position: 50% 50%;
 	padding: 0;
+	padding-bottom: 100px;
 }
 
 .description {
