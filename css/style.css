@@ -826,10 +826,10 @@ span.fonts {
 */
 
 /* ПАРТНЕРЫ */
-/*
+
 .partners {
-	padding: 15px 0 70px;
-	background-color: #107c4a;
+	padding: 35px 0 70px;
+	background-color: #efb900;
 }
 
 .partners h2 {
@@ -881,31 +881,39 @@ span.fonts {
 		left: -10px;
 	}
 }
-*/
 
 /* КОНТАКТЫ */
-/*
-.contacts {
-	background-image: url('../img/contacts-fon.jpg');
+
+#contacts {
+	background-image: url('../img/fon-contacts.jpg');
 	background-size: cover;
 	background-position: 50% 50%;
 	color: white;
-	padding: 150px 0 200px;
+	padding: 100px 0 150px;
+	box-shadow: inset 0 2px 5px black;
 }
 
-.contacts h2 {
+#contacts .plashka {
+	background-color: rgba(0, 114, 51, .4);
+	border-radius: 10px;
+	padding: 0 !important;
+}
+
+#contacts h2 {
     text-align: center;
     color: white;
     font-family: Pattaya;
 	margin-bottom: 30px;
 }
 
-.contacts .row:last-child {
+#contacts .row:last-child {
 	padding-top: 30px;
 	position: relative;
+	background-color: rgba(0, 114, 51, .8);
+	border-radius: 0 0 10px 10px;
 }
 
-.contacts .row:last-child .up {
+#contacts .row:last-child .up {
 	position: absolute;
 	right: 30px;
 	bottom: 35%;
@@ -914,18 +922,30 @@ span.fonts {
 	border-radius: 2px;
 }
 
-.contacts .col-sm-4 {
+#contacts .col-sm-4 {
 	text-align: center;
 	padding: 100px 0;
 }
 
-.contacts p {
+#contacts p {
 	max-width: 385px;
 	margin: 25px auto;
 }
 
-.contacts p a {
+#contacts p a {
 	color: white;
+}
+
+#contacts .but-ton {
+	background-color: #efb900;
+}
+
+#contacts .but-ton:before {
+	background-color: #007233;
+}
+
+#contacts .but-ton span {
+	top: 5px;
 }
 
 #mapkit-8962 {
@@ -935,32 +955,31 @@ span.fonts {
 }
 	
 @media screen and (max-width: 767px) {
-	.contacts {
+	#contacts {
 		padding: 70px 0;
 	}
-	.contacts .col-sm-4 {
+	#contacts .col-sm-4 {
 		padding: 0 0 50px 0;
 	}
-	.contacts p {
+	#contacts p {
 		text-align: center;
 	}
 }
 
 @media screen and (max-width: 500px) {
-	.contacts .row:last-child .up {
+	#contacts .row:last-child .up {
 		position: static;
 		display: block;
 		margin: 0 auto;
 	}
 }
-*/
+
 
 /* ФУТЕР */
-/*
+
 .footer {
 	padding: 30px 0;
-	background-color: #107c4a;
-	color: white;
+	background-color: #efb900;
 }
 
 .footer [class^="col-"] {
@@ -984,4 +1003,3 @@ span.fonts {
 		margin: 0 auto;
 	}
 }
-	
